@@ -1,0 +1,129 @@
+/* Overall styling for the whole page */
+body {
+    /* Changing the font all over the website */
+    font-family: 'poppins', sans-serif;
+    /* Changing the default color of the website texts */
+    color: #f3f3f3;
+    /* Removing the default padding and margin of the web browser  */
+    padding: 0;
+    margin: 0;
+    /* Setting the background image crop to spread from the center */
+    background-position: center;
+    /* Setting the size of the background image. Using min values to make sure the image covers the whole page and not getting smaller than the specified values */
+    /* vh and vw are for viewport size, basically 100vw means 100% of available width */
+    min-height: 100vh;
+    min-width: 100vw;
+    /* Cover is used to make the background cover the whole page */
+    background-size: cover;
+    background-image: url("https://media.istockphoto.com/photos/closeup-focus-on-persons-hands-typing-on-the-desktop-computer-show-picture-id1356364268?b=1&k=20&m=1356364268&s=170667a&w=0&h=YibLOYYDkERhgK4BvRw3TzIlPYQAo4nbMnFA-5CvZ0k=");
+    /* If you exclude the no-repeat line, the picture will just repeat all over the page, rather then resize itself */
+    /* It's also possible to repeat horizontally or vertically instead of repeating all over. */
+    background-repeat: no-repeat;
+  }
+  
+  /* Used for a div to add light purple effect to the background image */
+  .color-overlay {
+    /* 100% and 100vh both means cover the whole available space */
+    min-width: 100%;
+    min-height: 100vh;
+    /* in the rgba, a determines the opacity. */
+    background-color: rgba(45, 0, 128, 30%)
+  }
+  
+  /* Header area */
+  h1, p{
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+    padding-top: 1em;
+  }
+  
+  p {
+    margin: 0;
+    margin-bottom: 1.5em
+  }
+  /* /Header area */
+  
+  /* Customizing form  */
+  form {
+    max-width: 540px;
+    min-width: 300px;
+    /* border radius controls the sharpness of the box edges */
+    border-radius: 5px;
+    /* Margin with values of 0 auto is used to center the box vertically */
+    margin: 0 auto;
+    padding-bottom: 40px;
+    padding-top: 25px;
+    background-color: rgba(0, 0, 20, 50%)
+  }
+  
+  fieldset {
+    /* fieldset has default border so I removed them here */
+    border: none;
+    margin: 1em;
+  }
+  
+  label {
+    /* displaying labels as blocks so they wont get smushed together */
+    display: block;
+    margin-bottom: 0.5em;
+  }
+  
+  input,
+  select {
+    /* Using 100% width on the inputs and selects so they will drop to a new line and stretch over the whole available space */
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2.2em;
+    border-radius: 4px;
+  }
+  
+  /* Use :: to target an attribute inside an element, for example placeholder inside the input. */
+  input::placeholder {
+    padding-left: 10px;
+  }
+  
+  textarea {
+    /* Displaying as block to add margins */
+    display: block;
+    /* Dropping it to a new line by using 100% width */
+    width: 100%;
+    height: 6em;
+    /* Centering */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  select {
+    /* Setting the width to 98% so it will appear a little smaller than the rest of the inputs */
+    width: 98%;
+    padding-left: 10px;
+  }
+  
+  .inline {
+    /* The unset property allowing the class to inherit it's width rather than set its own. */
+    width: unset;
+    margin: 0;
+    margin-top: -0.3em;
+    margin-right: 0.5em;
+    /* This line of code making the dots to line up with the words in the radio section. */
+    vertical-align: middle;
+  }
+  
+  /* This class is added to the small texts in the labels for example '(Optional)' */
+  .sideNote {
+    font-size: 0.7em;
+  }
+  
+  /* Targeting the submit button. */
+  input[type="submit"] {
+    display: block;
+    border-radius: 2px;
+    width: 100%;
+    height: 3em;
+    margin-top: 15px;
+    background-color: #37af65;
+  }
