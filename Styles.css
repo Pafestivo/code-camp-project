@@ -10,7 +10,7 @@ body {
     /* Setting the background image crop to spread from the center */
     background-position: center;
     /* Setting the size of the background image. Using min values to make sure the image covers the whole page and not getting smaller than the specified values */
-    /* vh and vw are for viewport size, basically 100vw means 100% of available width */
+    /* vh and vw are for viewport size, basically 100vw means 100% of screen width */
     min-height: 100vh;
     min-width: 100vw;
     /* Cover is used to make the background cover the whole page */
